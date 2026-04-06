@@ -37,5 +37,5 @@ Sistem ini menggunakan pin digital Arduino dengan pemetaan sebagai berikut:
 
 ## 🚀 Link Simulasi
 Rangkaian dan simulasi dapat dilihat pada link dibawah ini:
-* **Arduino Uno:** [Simulasi Tinkercad](https://www.tinkercad.com/things/7ZgOpGRwMwP-tugas-52).
+* **Arduino Uno:** [Simulasi Tinkercad]([https://www.tinkercad.com/things/7ZgOpGRwMwP-tugas-52](https://www.tinkercad.com/things/7ZgOpGRwMwP-tugas-52/editel?returnTo=%2Fthings%2F7ZgOpGRwMwP-tugas-52&sharecode=9hff1GiPWi0CEHe7vpUrWTWXUO1Ls2kVpfTewytylDk)).
 
