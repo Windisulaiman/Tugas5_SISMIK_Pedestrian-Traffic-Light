@@ -1,0 +1,69 @@
+// Lampu Kendaraan
+int merah = 10;
+int kuning = 9;
+int hijau = 8;
+
+// Penyebrangan kiri
+int merah_kiri = 12;
+int hijau_kiri = 11;
+
+// Penyebrangan kanan
+int merah_kanan = 7;
+int hijau_kanan = 6;
+
+// Pushbutton
+int tombolKiri = 13;
+int tombolKanan = 2;
+
+void setup() {
+  pinMode(merah, OUTPUT);
+  pinMode(kuning, OUTPUT);
+  pinMode(hijau, OUTPUT);
+
+  pinMode(merah_kiri, OUTPUT);
+  pinMode(hijau_kiri, OUTPUT);
+  pinMode(merah_kanan, OUTPUT);
+  pinMode(hijau_kanan, OUTPUT);
+
+  pinMode(tombolKiri, INPUT_PULLUP);
+  pinMode(tombolKanan, INPUT_PULLUP);
+}
+
+void loop() {
+
+  // KONDISI NORMAL
+  digitalWrite(hijau, HIGH);
+  digitalWrite(kuning, LOW);
+  digitalWrite(merah, LOW);
+
+  digitalWrite(merah_kiri, HIGH);
+  digitalWrite(hijau_kiri, LOW);
+  digitalWrite(merah_kanan, HIGH);
+  digitalWrite(hijau_kanan, LOW);
+
+  // Jika salah satu tombol ditekan
+  if (digitalRead(tombolKiri) == LOW || digitalRead(tombolKanan) == LOW) {
+
+    delay(200); 
+
+    // Kuning 2 detik
+    digitalWrite(hijau, LOW);
+    digitalWrite(kuning, HIGH);
+    delay(2000);
+
+    // Merah jalan + hijau penyebrangan
+    digitalWrite(kuning, LOW);
+    digitalWrite(merah, HIGH);
+
+    digitalWrite(merah_kiri, LOW);
+    digitalWrite(hijau_kiri, HIGH);
+
+    digitalWrite(merah_kanan, LOW);
+    digitalWrite(hijau_kanan, HIGH);
+
+    delay(5000); // waktu nyebrang
+
+    // Kembali normal
+    digitalWrite(merah, LOW);
+  }
+}
