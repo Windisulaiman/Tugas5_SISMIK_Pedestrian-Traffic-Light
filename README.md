@@ -23,17 +23,17 @@ Sistem ini menggunakan pin digital Arduino dengan pemetaan sebagai berikut:
   
 ## ⏱️ Aturan & Timing Sistem
  * Kondisi awal:
-    //Lampu kendaraan hijau
-    //Lampu pedestrian merah
+     * Lampu kendaraan hijau
+     * Lampu pedestrian merah
 * Saat ditekan:
-* Lampu kendaraan berubah menjadi merah
-    • Lampu pedestrian berubah menjadi hijau
+    * Lampu kendaraan berubah menjadi merah
+    * Lampu pedestrian berubah menjadi hijau
 * Setelah waktu tertentu:
-    • Lampu pedestrian kembali merah
-    • Lampu kendaraan memasuki fase kuning (transisi)
+    *  Lampu pedestrian kembali merah
+    *   Lampu kendaraan memasuki fase kuning (transisi)
 * Sistem kembali ke kondisi awal:
-    • Lampu kendaraan hijau
-    • Lampu pedestrian tetap merah
+    * Lampu kendaraan hijau
+    * Lampu pedestrian tetap merah
 
 ## 🚀 Link Simulasi
 Rangkaian dan simulasi dapat dilihat pada link dibawah ini:
